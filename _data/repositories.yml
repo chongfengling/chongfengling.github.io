@@ -1,12 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - chongfengling
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - chongfengling/Pulse-Sequence-Optimization
+  - chongfengling/Timetable-Problem
+  - chongfengling/A-Virtual-Solar-System
+  - chongfengling/Conference-travel-emissions
+  - chongfengling/Supervised-Learning
+  # - chongfengling/Information-Retrieval-and-Data-Mining
+  - chongfengling/Game-of-Life
