@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /assets/pdf/cv_en.pdf
+permalink: assets/pdf/ChongfengLing_cv.pdf
 title: Resume
 nav: true
 newtab: true
