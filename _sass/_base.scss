@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
@@ -19,7 +21,10 @@ strong {
   color: var(--global-text-color);
 }
 body {
-  font-family: monospace;
+  font-family: "EB Garamond", "Lora", "Times New Roman", "Noto Serif SC", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; /* 使用深灰色而非纯黑，更有期刊感 */
 }
 hr {
   border-top: 1px solid var(--global-divider-color);
@@ -507,13 +512,14 @@ footer.sticky-bottom {
 
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
+  text-align: left;
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
 
@@ -550,8 +556,15 @@ footer.sticky-bottom {
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .post-title {
+      font-family: "EB Garamond", serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: var(--global-text-color);
+    }
 
     .post-meta {
       color: var(--global-text-color-light);
@@ -564,6 +577,11 @@ footer.sticky-bottom {
       font-size: 0.875rem;
       padding-top: 0.25rem;
       padding-bottom: 0;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.5;
     }
 
     a {
@@ -869,6 +887,11 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
+  // 只针对不包含 profile 模块的 post（即博文和列表）缩小字体
+  &:not(:has(.profile)) {
+    font-size: 0.9rem;
+  }
+
   .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;

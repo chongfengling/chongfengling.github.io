@@ -8,14 +8,23 @@ profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  # more_info: >
-  #   <p>555 your office number</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
+  more_info: >
+    <div class="social">
+        <div class="contact-icons" style="font-size: 1.5rem;">
+            <a href="mailto:ling.chongfeng@outlook.com" title="email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/chongfengling" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/your_username" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="/assets/pdf/ChongfengLing_cv.pdf" title="CV"><i class="ai ai-cv"></i></a>
+        </div>
+    </div>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
 Welcome to my personal website, a work-in-progress hub where I showcase my past projects and ongoing work. I am a recent graduate passionate about developing and optimizing programs for complex problems. Feel free to explore!
