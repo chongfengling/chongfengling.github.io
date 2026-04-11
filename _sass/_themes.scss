@@ -3,19 +3,19 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
+  --global-bg-color: #f5f4ed; /* Parchment */
+  --global-code-bg-color: #e8e6dc; /* Warm Sand */
+  --global-text-color: #141413; /* Anthropic Near Black */
+  --global-text-color-light: #5e5d59; /* Olive Gray */
+  --global-theme-color: #c96442; /* Terracotta Brand */
+  --global-hover-color: #d97757; /* Coral Accent */
+  --global-hover-text-color: #ffffff; /* Pure White */
+  --global-footer-bg-color: #30302e; /* Dark Surface */
+  --global-footer-text-color: #b0aea5; /* Warm Silver */
+  --global-footer-link-color: #ffffff; /* Pure White */
+  --global-distill-app-color: #87867f; /* Stone Gray */
+  --global-divider-color: #f0eee6; /* Border Cream */
+  --global-card-bg-color: #faf9f5; /* Ivory */
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -48,19 +48,19 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-bg-color: #141413; /* Deep Dark */
+  --global-code-bg-color: #30302e; /* Dark Surface */
+  --global-text-color: #b0aea5; /* Warm Silver */
+  --global-text-color-light: #87867f; /* Stone Gray */
+  --global-theme-color: #c96442; /* Terracotta Brand */
+  --global-hover-color: #d97757; /* Coral Accent */
+  --global-hover-text-color: #ffffff; /* Pure White */
+  --global-footer-bg-color: #30302e; /* Dark Surface */
+  --global-footer-text-color: #b0aea5; /* Warm Silver */
+  --global-footer-link-color: #faf9f5; /* Ivory */
+  --global-distill-app-color: #87867f; /* Stone Gray */
+  --global-divider-color: #30302e; /* Border Dark */
+  --global-card-bg-color: #30302e; /* Dark Surface */
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

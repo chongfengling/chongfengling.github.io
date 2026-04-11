@@ -28,8 +28,8 @@ cv_pdf: ChongfengLing_cv.pdf
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: "default&bg_color=faf9f5&title_color=141413&text_color=5e5d59&icon_color=c96442&border_color=f0eee6&hide_border=false"
+repo_theme_dark: "dark&bg_color=30302e&title_color=b0aea5&text_color=87867f&icon_color=c96442&border_color=30302e&hide_border=false"
 repo_trophies:
   enabled: true
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
@@ -51,7 +51,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 1000px
+max_width: 1200px
 
 # TODO: add layout settings (single page vs. multi-page)
 
