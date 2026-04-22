@@ -13,8 +13,9 @@ profile:
         <div class="contact-icons" style="font-size: 1.5rem;">
             <a href="mailto:ling.chongfeng@outlook.com" title="email"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://github.com/chongfengling" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/your_username" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="/assets/pdf/ChongfengLing_cv.pdf" title="CV"><i class="ai ai-cv"></i></a>
+            <a href="https://www.linkedin.com/in/chongfeng-ling" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.zhihu.com/people/Lingcf" title="Zhihu"><i class="fa-brands fa-zhihu"></i></a>
+            <a href="/assets/pdf/0_LING_RESUME.pdf" title="CV"><i class="ai ai-cv"></i></a>
         </div>
     </div>
 
