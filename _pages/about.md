@@ -28,8 +28,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Welcome to my personal website, a work-in-progress hub where I showcase my past projects and ongoing work. I am a recent graduate passionate about developing and optimizing programs for complex problems. Feel free to explore!
+Welcome to my personal website—a hub where I showcase my ongoing work and past projects. I am an entry-level AI engineer deeply passionate about accelerating AI infrastructure, with a specialized focus on **kernel optimization** across GPUs and NPUs. (Fun fact: my English name, Miles, was inspired by my favorite movie, *Spider-Man: Across the Spider-Verse.*) 
 
-During my academic journey, I have acquired a strong foundation in programming language, machine learning and applying numerical methods as well as critical evaluation to science and engineering projects. 
 
-Passionate about open source. Led the development of an open source knowledge-sharing platform on Github Pages tailored for undergraduates.
+During my academic journey, I have built a strong foundation in math and programming, alongside the ability to apply numerical methods and critically evaluate science and engineering projects. Most recently, I have been involved in the DeepSeek ecosystem, where I designed and developed **Quantized MatMul** kernels specifically for Ascend (NPU) hardware.
+
+I am currently actively **seeking opportunities** in both industry and academia to further push the boundaries of high-performance AI systems.
+
+
+Feel free to explore!

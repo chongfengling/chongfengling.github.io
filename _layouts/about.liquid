@@ -56,6 +56,38 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Last Repositories -->
+    <h2 id="last-repositories">
+      <a href="#last-repositories" style="color: inherit">Last Repositories</a>
+    </h2>
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-4 mb-4">
+        {% include repository/repo_user.liquid username="chongfengling" %}
+      </div>
+      <div class="col-lg-4 mb-4">
+        {% include repository/repo.liquid repository="chongfengling/CUDA-HandsOn" %}
+      </div>
+      <div class="col-lg-4 mb-4">
+        {% include repository/repo.liquid repository="chongfengling/High-Performance-Computing" %}
+      </div>
+    </div>
+
+    <!-- Last Photos -->
+    <h2 id="last-photos">
+      <a href="#last-photos" style="color: inherit">Last Photos</a>
+    </h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        {% include figure.liquid path="assets/img/sun.jpg" class="img-fluid rounded" alt="placeholder image 1" caption="Wenling, Zhejiang, China <br> 8 March 2022" %}
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        {% include figure.liquid path="assets/img/snow.jpg" class="img-fluid rounded" alt="placeholder image 2" caption="Euston, London, UK <br> 11 December 2022" %}
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        {% include figure.liquid path="assets/img/night.jpg" class="img-fluid rounded" alt="placeholder image 3" caption="Takashima, Suwa, Japan <br> 16 October 2025" %}
+      </div>
+    </div>
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
