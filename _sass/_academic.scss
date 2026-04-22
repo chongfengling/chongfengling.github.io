@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ============================================================
+   Academic Technical Style: Blue/Gold/Teal (Performance Optimized)
+   Adapted for Jekyll al-folio
+   ============================================================ */
+
+:root {
+  /* Global Color Variables */
+  --table-border-color: #002855;               /* Navy Blue Border */
+  --table-header-bg: rgba(0, 40, 85, 0.1);     /* Header Background */
+  --table-first-col-bg: rgba(0, 40, 85, 0.05); /* First Column Background */
+  --table-header-text: #0056b3;                /* Header Text */
+  --table-stripe-bg: rgba(0, 40, 85, 0.02);    /* Zebra Stripe */
+  --table-radius: 6px;                         /* Rounded Corners */
+}
+
+/* 1. Headings: Navy Blue - Reduced Sizes for Academic Compactness */
+h1, .post-title, .navbar-brand.title {
+    font-size: 1.8rem !important;
+    color: #002855 !important;
+    font-weight: 700 !important;
+    font-family: "Anthropic Serif", Georgia, serif !important;
+}
+
+h2 {
+    font-size: 1.4rem !important;
+    color: #002855 !important;
+    font-weight: 700 !important;
+    margin-top: 1.5rem !important;
+}
+
+h3 {
+    font-size: 1.15rem !important;
+    color: #002855 !important;
+    font-weight: 700 !important;
+    margin-top: 1.2rem !important;
+}
+
+h4 {
+    font-size: 1rem !important;
+    color: #002855 !important;
+    font-weight: 700 !important;
+}
+
+/* H1, H2 decorative underlines */
+h1, h2, .post-title {
+    border-bottom: 2px solid #002855 !important;
+    padding-bottom: 4px !important;
+}
+
+/* 2. Bold Text: Deep Gold (Amber) */
+strong, b, .cm-strong {
+    color: #d4a017 !important;
+    font-weight: 700 !important;
+}
+
+/* 3. Inline Code: Technical Teal */
+code:not(pre code) {
+    color: #3c6e71 !important;
+    background-color: #f0f4f4 !important;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Anthropic Mono', monospace !important;
+    font-size: 0.9em !important;
+    padding: 0.15em 0.3em !important;
+    border: 1px solid #e0e6e6 !important;
+    border-radius: 4px !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* 4. Links */
+a, .post-content a {
+    color: #3c6e71 !important;
+    text-decoration-color: rgba(60, 110, 113, 0.3) !important;
+}
+
+/* ============================================================
+   Table Style
+   ============================================================ */
+
+/* 1. Base Layout & Borders */
+table {
+  border: 2px solid var(--table-border-color) !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: var(--table-radius) !important;
+  overflow: hidden !important;
+  margin: 16px 0 !important;
+  width: auto;
+  max-width: 100% !important;
+}
+
+/* 2. Common Cell Borders */
+table :is(th, td) {
+  border-right: 1px solid var(--table-border-color) !important;
+  border-bottom: 1px solid var(--table-border-color) !important;
+  padding: 10px 15px !important;
+}
+
+/* 3. Header Style */
+table th {
+  background-color: var(--table-header-bg) !important;
+  color: var(--table-header-text) !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+}
+
+/* 4. First Column Formatting */
+table td:first-child {
+  background-color: var(--table-first-col-bg) !important;
+  font-weight: 600 !important;
+  color: var(--table-header-text) !important;
+  min-width: 100px;
+  border-right: 2px solid var(--table-border-color) !important;
+}
+
+/* 5. Zebra Stripes (skipping first column) */
+table tr:nth-child(even) td:not(:first-child) {
+  background-color: var(--table-stripe-bg) !important;
+}
+
+/* 6. Remove redundant borders on right and bottom */
+table :is(th, td):last-child {
+  border-right: none !important;
+}
+table tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* 7. Hover Highlight */
+table tr:hover td {
+  background-color: rgba(0, 86, 179, 0.08) !important;
+  transition: background-color 0.1s ease;
+}
+
+/* Table of Contents Sidebar Override: Always expand and style */
+nav[data-toggle=toc] {
+  .nav .nav {
+    display: block !important; /* Force expand all sub-levels */
+  }
+  
+  .nav > li > a {
+    font-size: 0.85rem !important;
+    color: var(--global-text-color) !important;
+    padding: 4px 15px !important;
+    border-left: 2px solid transparent !important;
+    
+    &:hover {
+      color: var(--global-theme-color) !important;
+      background-color: transparent !important;
+    }
+    
+    &.active {
+      color: var(--global-theme-color) !important;
+      font-weight: 700 !important;
+      border-left: 2px solid var(--global-theme-color) !important;
+    }
+  }
+
+  .nav .nav > li > a {
+    font-size: 0.75rem !important;
+    padding-left: 25px !important;
+  }
+}
+
+/* Layout adjustments restricted to post-content only */
+.post-content {
+    max-width: 100% !important; 
+    margin: 0 auto !important;
+}
+
+/* Reduce spacing between paragraphs, lists, and code blocks */
+.post-content {
+    p {
+        margin-bottom: 0.5rem !important; /* Reduced from default */
+    }
+
+    ul, ol {
+        margin-bottom: 0.5rem !important;
+        margin-top: 0.25rem !important;
+    }
+
+    li {
+        margin-bottom: 0.25rem !important;
+    }
+
+    figure.highlight, pre {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    /* Keep headings spaced properly but slightly tighter */
+    h2, h3, h4 {
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+/* Force block-level math display containers to behave as independent blocks and center them */
+mjx-container[display="true"] {
+  display: block !important;
+  margin: 1.5rem auto !important;
+  clear: both !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+/* 恢复 Repositories 网格布局 */
+.repositories {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 24px !important;
+  margin-top: 20px !important;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+.repo {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  border-radius: 8px !important;
+  
+  img {
+    border-radius: 8px !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 24px !important;
+    background-color: var(--global-card-bg-color) !important;
+  }
+}
